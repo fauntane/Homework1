@@ -143,6 +143,10 @@ body {
 .top-games {
   background-color: #202027;
 }
+.top-games__href {
+  text-decoration: none;
+  color: #202027;
+}
 .top-games__info {
   padding-top: 94px;
   width: -moz-max-content;
