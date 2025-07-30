@@ -14,14 +14,13 @@ body {
 
 .top {
     background-color: #E1FF8F;
-    overflow: hidden;
     position: relative;
+    overflow: hidden;
 
     &__header {
         padding-top: 196px;
         padding-bottom: 156px;
-
-
+        position: relative;
     }
 
     &__text {
@@ -84,71 +83,35 @@ body {
 
     &__images-2 {
         position: absolute;
-        left: 113px;
+        left: -63px;
         top: 94px;
     }
 
     &__images-3 {
         position: absolute;
-        left: 192px;
+        left: 35px;
         top: 69px;
     }
 
     &__images-4 {
         position: absolute;
-        left: 1013px;
+        left: 880px;
         top: 568px;
-        transform: translateX(200px);
     }
 
     &__images-5 {
         position: absolute;
-        left: 748px;
+        left: 815px;
         top: 538px;
-        transform: translateX(200px);
     }
 
     &__images-group {
         position: absolute;
-        top: -40px;
-        right: 0px;
+        top: -100px;
+        left: 654px;
         width: 145vh;
         height: 865px;
         z-index: 0;
-        transform: translateX(200px);
-    }
-
-    &__running-line {
-        overflow: hidden;
-        position: relative;
-        background-color: #BCEC30;
-        height: 90px;
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-        border: 1px;
-    }
-
-    &__running-wrapper {
-        gap: 70px;
-        display: flex;
-        animation: scroll-left 10s linear infinite;
-    }
-
-    &__running-text {
-        font-family: "Montserrat", sans-serif;
-        font-weight: 700;
-        font-style: bold;
-        font-size: 30px;
-        line-height: 110%;
-        text-transform: uppercase;
-    }
-
-    &__running-content {
-        display: flex;
-        gap: 25px;
-        align-items: center;
-        white-space: nowrap;
     }
 
     @keyframes scroll-left {
@@ -159,5 +122,123 @@ body {
         100% {
             transform: translateX(-90%);
         }
+    }
+}
+
+.running-line {
+    overflow: hidden;
+    position: relative;
+    background-color: #BCEC30;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    border: 1px;
+
+    &__wrapper {
+        gap: 70px;
+        display: flex;
+        animation: scroll-left 10s linear infinite;
+    }
+
+    &__text {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-style: bold;
+        font-size: 30px;
+        line-height: 110%;
+        text-transform: uppercase;
+    }
+
+    &__content {
+        display: flex;
+        gap: 25px;
+        align-items: center;
+        white-space: nowrap;
+    }
+}
+
+.top-games {
+    background-color: #202027;
+
+    &__info {
+        padding-top: 94px;
+        width: max-content;
+    }
+
+    &__title {
+        color: white;
+        font-weight: 700;
+        font-style: bold;
+        font-size: 64px;
+        line-height: 100%;
+        letter-spacing: 0px;
+    }
+
+    &__paragraph {
+        padding-top: 24px;
+        color: white;
+        width: 788px;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0px;
+        vertical-align: middle;
+    }
+
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 72px;
+        gap: 32px;
+        padding-bottom: 96px;
+    }
+
+    &__card-1 {
+        border-radius: 30px;
+        width: 378px;
+        height: auto;
+        background-color: #FFFFFF;
+        transition: transform 0.3s ease;
+        will-change: transform;
+        z-index: 0;
+    }
+
+    &__card-1:hover {
+        transform: scale(1.05);
+        z-index: 2;
+    }
+
+    &__number {
+        display: flex;
+        font-weight: 500;
+        font-style: medium;
+        font-size: 16px;
+        line-height: 110%;
+        letter-spacing: 0px;
+        vertical-align: bottom;
+        background-color: #f7f7f7;
+        border-radius: 53px;
+        width: 108px;
+        height: 36px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__name {
+        padding-top: 16px;
+        font-weight: 700;
+        font-style: bold;
+        font-size: 32px;
+        line-height: 100%;
+        letter-spacing: 0px;
+        vertical-align: middle;
+    }
+
+    .card-info {
+        padding: 32px;
+        gap: 16px;
+        padding-bottom: 36px;
     }
 }

@@ -14,12 +14,13 @@ body {
 
 .top {
   background-color: #E1FF8F;
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
 }
 .top__header {
   padding-top: 196px;
   padding-bottom: 156px;
+  position: relative;
 }
 .top__text {
   width: 769px;
@@ -74,36 +75,42 @@ body {
 }
 .top__images-2 {
   position: absolute;
-  left: 113px;
+  left: -63px;
   top: 94px;
 }
 .top__images-3 {
   position: absolute;
-  left: 192px;
+  left: 35px;
   top: 69px;
 }
 .top__images-4 {
   position: absolute;
-  left: 1013px;
+  left: 880px;
   top: 568px;
-  transform: translateX(200px);
 }
 .top__images-5 {
   position: absolute;
-  left: 748px;
+  left: 815px;
   top: 538px;
-  transform: translateX(200px);
 }
 .top__images-group {
   position: absolute;
-  top: -40px;
-  right: 0px;
+  top: -100px;
+  left: 654px;
   width: 145vh;
   height: 865px;
   z-index: 0;
-  transform: translateX(200px);
 }
-.top__running-line {
+@keyframes scroll-left {
+  0% {
+    transform: translateX(90%);
+  }
+  100% {
+    transform: translateX(-90%);
+  }
+}
+
+.running-line {
   overflow: hidden;
   position: relative;
   background-color: #BCEC30;
@@ -113,12 +120,12 @@ body {
   gap: 30px;
   border: 1px;
 }
-.top__running-wrapper {
+.running-line__wrapper {
   gap: 70px;
   display: flex;
   animation: scroll-left 10s linear infinite;
 }
-.top__running-text {
+.running-line__text {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-style: bold;
@@ -126,17 +133,86 @@ body {
   line-height: 110%;
   text-transform: uppercase;
 }
-.top__running-content {
+.running-line__content {
   display: flex;
   gap: 25px;
   align-items: center;
   white-space: nowrap;
 }
-@keyframes scroll-left {
-  0% {
-    transform: translateX(90%);
-  }
-  100% {
-    transform: translateX(-90%);
-  }
+
+.top-games {
+  background-color: #202027;
+}
+.top-games__info {
+  padding-top: 94px;
+  width: -moz-max-content;
+  width: max-content;
+}
+.top-games__title {
+  color: white;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+.top-games__paragraph {
+  padding-top: 24px;
+  color: white;
+  width: 788px;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  vertical-align: middle;
+}
+.top-games__cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 72px;
+  gap: 32px;
+  padding-bottom: 96px;
+}
+.top-games__card-1 {
+  border-radius: 30px;
+  width: 378px;
+  height: auto;
+  background-color: #FFFFFF;
+  transition: transform 0.3s ease;
+  will-change: transform;
+  z-index: 0;
+}
+.top-games__card-1:hover {
+  transform: scale(1.05);
+  z-index: 2;
+}
+.top-games__number {
+  display: flex;
+  font-weight: 500;
+  font-style: medium;
+  font-size: 16px;
+  line-height: 110%;
+  letter-spacing: 0px;
+  vertical-align: bottom;
+  background-color: #f7f7f7;
+  border-radius: 53px;
+  width: 108px;
+  height: 36px;
+  justify-content: center;
+  align-items: center;
+}
+.top-games__name {
+  padding-top: 16px;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  vertical-align: middle;
+}
+.top-games .card-info {
+  padding: 32px;
+  gap: 16px;
+  padding-bottom: 36px;
 }/*# sourceMappingURL=style.css.map */
