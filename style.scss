@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 .center {
     padding-left: calc(50% - 600px);
@@ -95,20 +98,20 @@ body {
 
     &__images-4 {
         position: absolute;
-        left: 880px;
+        right: 250px;
         top: 568px;
     }
 
     &__images-5 {
         position: absolute;
-        left: 815px;
+        right: 350px;
         top: 538px;
     }
 
     &__images-group {
         position: absolute;
         top: -100px;
-        left: 654px;
+        right:-200px;
         width: 145vh;
         height: 865px;
         z-index: 0;
@@ -193,11 +196,17 @@ body {
     }
 
     &__cards {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         padding-top: 72px;
         gap: 32px;
         padding-bottom: 96px;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
     }
 
     &__card-1 {

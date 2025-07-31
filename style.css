@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .center {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
@@ -85,18 +89,18 @@ body {
 }
 .top__images-4 {
   position: absolute;
-  left: 880px;
+  right: 250px;
   top: 568px;
 }
 .top__images-5 {
   position: absolute;
-  left: 815px;
+  right: 350px;
   top: 538px;
 }
 .top__images-group {
   position: absolute;
   top: -100px;
-  left: 654px;
+  right: -200px;
   width: 145vh;
   height: 865px;
   z-index: 0;
@@ -172,11 +176,16 @@ body {
   vertical-align: middle;
 }
 .top-games__cards {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   padding-top: 72px;
   gap: 32px;
   padding-bottom: 96px;
+}
+.top-games .column {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 .top-games__card-1 {
   border-radius: 30px;
