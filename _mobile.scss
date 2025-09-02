@@ -61,7 +61,11 @@
             display: none;
         }
 
-        &__images-vector {}
+        &__images-vector {
+            display: flex;
+            right: -20px;
+            top: 0px;
+        }
 
         &__images-5 {
             left: 273px;
@@ -120,7 +124,7 @@
             width: 100%;
         }
     }
-}
+
 
 .mini-games {
 
@@ -176,7 +180,9 @@
     }
 
     &__card-href {
-        width: 285px;
+        max-width: 285px;
+        width: 100%;
         height: 45px;
     }
+}
 }
