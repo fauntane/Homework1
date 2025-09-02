@@ -66,6 +66,11 @@ body {
     }
 
     &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 247px;
+        height: 60px;
         font-family: "Montserrat", sans-serif;
         color: #FFFFFF;
         font-weight: 500;
@@ -74,10 +79,9 @@ body {
         line-height: 142%;
         letter-spacing: 0px;
         background-color: #202027;
-        width: 247px;
-        height: 60px;
         border-radius: 60px;
-        border: 1px;
+        border: 1px solid #000;
+        text-decoration: none;
     }
 
     &__button:hover {
@@ -107,6 +111,10 @@ body {
         position: absolute;
         right: 350px;
         top: 538px;
+    }
+
+    &__images-vector {
+        display: none;
     }
 
     &__images-group {
@@ -257,3 +265,94 @@ body {
         padding-bottom: 36px;
     }
 }
+
+.mini-games {
+    background-color: #202027;
+    color: white;
+
+    &__card {
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        margin-bottom: 32px;
+        border-radius: 30px;
+        box-shadow: 0px 20px 67px -12px #00000021;
+    }
+
+    &__card-rev {
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: white;
+        margin-bottom: 32px;
+        border-radius: 30px;
+        box-shadow: 0px 20px 67px -12px #00000021;
+    }
+
+    &__title {
+        font-size: 64px;
+        font-weight: 700;
+        font-style: bold;
+        letter-spacing: 0px;
+        margin-bottom: 72px;
+    }
+
+    &__href {
+        text-decoration: none;
+    }
+
+    &__img {
+        width: 600px;
+        height: 500px;
+    }
+
+    &__card-info {
+        display: flex;
+        flex-direction: column;
+        margin-top: 48px;
+        margin-left: 48px;
+        margin-right: 48px;
+        gap: 36px;
+    }
+
+    &__card-title {
+        font-weight: 700;
+        font-style: bold;
+        font-size: 48px;
+        letter-spacing: 0;
+        color: #202027;
+    }
+
+    &__card-text {
+        padding-top: 24px;
+        max-width: 457px;
+        width: 100%;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0px;
+        color: #202027;
+    }
+
+    &__card-href {
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        width: 247px;
+        height: 66px;
+        border-radius: 60px;
+        color: white;
+        background-color: #202027;
+        border-radius: 60px;
+        border: 1px solid #000;
+        text-decoration: none;
+        font-weight: 600;
+        font-style: SemiBold;
+        font-size: 24px;
+        line-height: 142%;
+        letter-spacing: 0%;
+    }
+}
+
+
+
+@import 'mobile';
