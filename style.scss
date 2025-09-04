@@ -270,6 +270,7 @@ body {
 .mini-games {
     background-color: #202027;
     color: white;
+    padding-bottom: 144px;
 
     &__card {
         display: flex;
@@ -350,6 +351,20 @@ body {
         font-style: SemiBold;
         font-size: 24px;
         line-height: 142%;
+        letter-spacing: 0%;
+    }
+}
+
+.footer {
+    display: flex;
+    background-color: #BDED35;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+
+    &__par {
+        font-weight: 600;
+        font-size: 24px;
         letter-spacing: 0%;
     }
 }

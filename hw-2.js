@@ -17,10 +17,10 @@ alert(jsCreator);
 let x = 10;
 let y = 2;
 
-alert(x + y); // сумма
-alert(x - y); // разность
-alert(x * y); // произведение
-alert(x / y); // частное
+alert(x + y);
+alert(x - y);
+alert(x * y);
+alert(x / y); 
 
 // Задание 5
 let result = 2 ** 5;
