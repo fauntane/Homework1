@@ -270,7 +270,7 @@ body {
 .mini-games {
     background-color: #202027;
     color: white;
-    padding-bottom: 144px;
+    padding-bottom: 112px;
 
     &__card {
         display: flex;
@@ -279,6 +279,7 @@ body {
         margin-bottom: 32px;
         border-radius: 30px;
         box-shadow: 0px 20px 67px -12px #00000021;
+        height: 500px;
     }
 
     &__card-rev {
@@ -288,6 +289,7 @@ body {
         margin-bottom: 32px;
         border-radius: 30px;
         box-shadow: 0px 20px 67px -12px #00000021;
+        height: 500px;
     }
 
     &__title {
@@ -300,19 +302,22 @@ body {
 
     &__href {
         text-decoration: none;
+        
     }
 
     &__img {
         width: 600px;
-        height: 500px;
+        max-height: 500px;
+        height: 100%;
     }
 
     &__card-info {
         display: flex;
         flex-direction: column;
-        margin-top: 48px;
-        margin-left: 48px;
-        margin-right: 48px;
+        max-width: 505px;
+        padding-top: 48px;
+        padding-left: 48px;
+        padding-right: 88px;
         gap: 36px;
     }
 
