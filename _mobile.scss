@@ -161,13 +161,15 @@
         &__card-rev {
             display: flex;
             flex-direction: column;
-
+            max-height: 606px;
+            height: 100%;
         }
 
         &__card {
             display: flex;
             flex-direction: column;
-
+            max-height: 606px;
+            height: 100%;
         }
 
         &__img {
