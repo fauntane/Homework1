@@ -271,6 +271,10 @@ body {
 .mini-games__href {
   text-decoration: none;
 }
+.mini-games__card-href:hover {
+  background-color: white;
+  color: #000;
+}
 .mini-games__img {
   width: 600px;
   max-height: 500px;
@@ -511,5 +515,15 @@ body {
   .footer__par {
     font-weight: 600;
     font-size: 16px;
+  }
+}
+@media (max-width: 1024px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top-games {
+    display: flex;
+    flex-direction: row;
   }
 }/*# sourceMappingURL=style.css.map */

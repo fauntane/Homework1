@@ -302,7 +302,11 @@ body {
 
     &__href {
         text-decoration: none;
-        
+    }
+
+    &__card-href:hover {
+        background-color: white;
+        color: #000;
     }
 
     &__img {
@@ -343,7 +347,7 @@ body {
     &__card-href {
         display: flex;
         justify-content: center;
-        align-items: center;  
+        align-items: center;
         width: 247px;
         height: 66px;
         border-radius: 60px;
@@ -377,3 +381,4 @@ body {
 
 
 @import 'mobile';
+@import 'tablet';
