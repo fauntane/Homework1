@@ -40,12 +40,13 @@ console.log(getSquare(6)); // 36
 //Zadanie 4
 function checkAge() {
     const age = prompt("Сколько вам лет?");
+    const userAge = Number(age);
 
-    if (age < 0) {
+    if (userAge < 0) {
         alert("Вы ввели неправильное значение");
-    } else if (age >= 0 && age <= 12) {
+    } else if (userAge >= 0 && userAge <= 12) {
         alert("Привет, друг!");
-    } else if (age >= 13) {
+    } else if (userAge >= 13) {
         alert("Добро пожаловать!");
     }
 }
@@ -66,11 +67,12 @@ console.log(multiply("abc", 4)); // Одно или оба значения не
 //Zadanie 6
 function cubeNumber() {
     const n = prompt("Введите число");
+    const num = Number(n);
 
     if (isNaN(n)) {
         return "Переданный параметр не является числом";
     } else {
-        const num = Number(n);
+
         return `${num} в кубе равняется ${num ** 3}`;
     }
 }

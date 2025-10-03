@@ -221,7 +221,7 @@ body {
 
     &__card-1 {
         border-radius: 30px;
-        width: 378px;
+        max-width: 378px;
         height: auto;
         background-color: #FFFFFF;
         transition: transform 0.3s ease;
@@ -379,6 +379,5 @@ body {
 }
 
 
-
-@import 'mobile';
 @import 'tablet';
+@import 'mobile';

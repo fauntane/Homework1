@@ -197,7 +197,7 @@ body {
 }
 .top-games__card-1 {
   border-radius: 30px;
-  width: 378px;
+  max-width: 378px;
   height: auto;
   background-color: #FFFFFF;
   transition: transform 0.3s ease;
@@ -338,6 +338,56 @@ body {
   letter-spacing: 0%;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .column {
+    max-width: 378px;
+    width: 100%;
+  }
+  .top-games__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+  }
+  .top-games__card-1 {
+    max-width: 378px;
+  }
+  .mini-games__cards-main {
+    gap: 20px;
+  }
+  .mini-games__card {
+    max-height: 510px;
+    align-items: center;
+  }
+  .mini-games__img {
+    max-width: 500px;
+    height: 510px;
+    width: 100%;
+  }
+  .mini-games__card-info {
+    width: 300px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  .mini-games__card-text {
+    max-width: 600px;
+    width: 100%;
+  }
+  .mini-games__card-button {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .mini-games__href {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 @media (max-width: 767px) {
   .center {
     padding-left: 16px;
@@ -452,6 +502,9 @@ body {
   .mini-games {
     padding-bottom: 5px;
   }
+  .mini-games__cards-main {
+    grid-template-columns: 1fr;
+  }
   .mini-games__title {
     margin: 0px;
     padding-bottom: 48px;
@@ -476,7 +529,7 @@ body {
     height: 100%;
   }
   .mini-games__img {
-    max-width: 394px;
+    max-width: 100%;
     width: 100%;
     height: 284px;
   }
@@ -487,6 +540,10 @@ body {
     margin-right: 40px;
     margin-top: 32px;
     margin-bottom: 32px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .mini-games__card-title {
     font-size: 32px;
@@ -502,8 +559,6 @@ body {
     vertical-align: middle;
   }
   .mini-games__card-href {
-    max-width: 285px;
-    width: 100%;
     height: 45px;
     font-weight: 600;
     font-size: 16px;
@@ -515,15 +570,5 @@ body {
   .footer__par {
     font-weight: 600;
     font-size: 16px;
-  }
-}
-@media (max-width: 1024px) {
-  .center {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-  .top-games {
-    display: flex;
-    flex-direction: row;
   }
 }/*# sourceMappingURL=style.css.map */
