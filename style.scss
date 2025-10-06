@@ -206,8 +206,8 @@ body {
     }
 
     &__cards {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        display: flex;
+        flex-wrap: wrap;
         padding-top: 72px;
         gap: 32px;
         padding-bottom: 96px;

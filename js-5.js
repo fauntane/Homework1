@@ -69,7 +69,7 @@ function cubeNumber() {
     const n = prompt("Введите число");
     const num = Number(n);
 
-    if (isNaN(n)) {
+    if (isNaN(num)) {
         return "Переданный параметр не является числом";
     } else {
 
