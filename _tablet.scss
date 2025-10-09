@@ -12,8 +12,8 @@
     .top-games {
 
         &__cards {
-            display: grid;
-            grid-template-columns: repeat(2, 3fr);
+            display: flex;
+            justify-content: center;
         }
 
         &__card-1 {
@@ -35,9 +35,10 @@
         }
 
         &__img {
-            max-width: 500px;
             height: 510px;
             width: 100%;
+            object-fit: cover;
+            border-radius: 20px;
         }
 
         &__card-info {
