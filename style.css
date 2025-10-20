@@ -535,6 +535,7 @@ body {
     height: 284px;
     -o-object-fit: cover;
        object-fit: cover;
+    border-radius: 25px;
   }
   .mini-games__card-info {
     padding: 0px;
