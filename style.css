@@ -186,8 +186,9 @@ body {
 .top-games__cards {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
   padding-top: 72px;
-  gap: 32px;
+  gap: 24px;
   padding-bottom: 96px;
 }
 .top-games .column {
@@ -203,6 +204,9 @@ body {
   transition: transform 0.3s ease;
   will-change: transform;
   z-index: 0;
+}
+.top-games__card-1-min {
+  margin-top: 32px;
 }
 .top-games__card-1:hover {
   transform: scale(1.05);

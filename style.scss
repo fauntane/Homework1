@@ -208,8 +208,9 @@ body {
     &__cards {
         display: flex;
         flex-wrap: wrap;
+        align-items: flex-start;
         padding-top: 72px;
-        gap: 32px;
+        gap: 24px;
         padding-bottom: 96px;
     }
 
@@ -227,6 +228,14 @@ body {
         transition: transform 0.3s ease;
         will-change: transform;
         z-index: 0;
+    }
+
+    &__card-1-big {
+        
+    }
+
+    &__card-1-min {
+        margin-top: 32px;
     }
 
     &__card-1:hover {
