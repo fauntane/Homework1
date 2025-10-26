@@ -210,7 +210,7 @@ body {
         flex-wrap: wrap;
         align-items: flex-start;
         padding-top: 72px;
-        gap: 24px;
+        column-gap: 32px;
         padding-bottom: 96px;
     }
 
@@ -230,9 +230,7 @@ body {
         z-index: 0;
     }
 
-    &__card-1-big {
-        
-    }
+    &__card-1-big {}
 
     &__card-1-min {
         margin-top: 32px;
