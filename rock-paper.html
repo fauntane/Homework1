@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Камень, Ножницы, Бумага</title>
+    <link rel="stylesheet" href="rock-paper.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Камень — Ножницы — Бумага</h1>
+        <div class="subtitle">Играйте против компьютера — выберите один из вариантов</div>
+
+        <div class="choices">
+            <button class="choice-btn" data-choice="камень">
+                <div class="choice-emoji">🪨</div>
+                <div>Камень</div>
+            </button>
+
+            <button class="choice-btn" data-choice="ножницы">
+                <div class="choice-emoji">✂️</div>
+                <div>Ножницы</div>
+            </button>
+
+            <button class="choice-btn" data-choice="бумага">
+                <div class="choice-emoji">📄</div>
+                <div>Бумага</div>
+            </button>
+        </div>
+
+        <div id="result">Сделайте выбор!</div>
+
+        <div class="footer-row">
+            <div class="choice-display">Вы: <span id="user-choice">-</span></div>
+            <div class="choice-display">Компьютер: <span id="comp-choice">-</span></div>
+            <button id="play-again" class="play-again">Начать заново</button>
+        </div>
+
+        <div class="small-info">Подсказка: камень бьёт ножницы, ножницы — бумагу, бумага — камень.</div>
+    </div>
+
+    <script src="rock-paper.js"></script>
+</body>
+</html>
