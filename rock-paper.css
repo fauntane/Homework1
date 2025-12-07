@@ -1,71 +1,35 @@
-*{box-sizing: border-box}
-body{
-  margin:0;
-  font-family: Inter, Roboto, Arial, sans-serif;
-  background: linear-gradient(135deg,#d3e3ff,#ffffff);
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  height:100vh;
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
-.container{
-  background:#fff;
-  padding:28px;
-  border-radius:20px;
-  box-shadow:0 6px 28px rgba(0,0,0,0.12);
-  text-align:center;
-  width:360px;
+
+.container {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 350px;
+  text-align: center;
 }
-h1{
-  margin:0 0 10px 0;
-  font-size:22px;
+
+button {
+  padding: 10px 20px;
+  margin-top: 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #4caf50;
+  color: white;
 }
-.subtitle{
-  color:#556;
-  font-size:13px;
-  margin-bottom:16px;
-}
-.choices{
-  display:flex;
-  justify-content:space-between;
-  gap:12px;
-}
-.choice-btn{
-  flex:1 1 0;
-  height:96px;
-  border-radius:14px;
-  font-size:15px;
-  cursor:pointer;
-  border:none;
-  background:linear-gradient(180deg,#f6f9ff,#e8f0ff);
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  gap:6px;
-  transition:transform .14s ease, box-shadow .14s ease;
-  box-shadow:0 6px 18px rgba(50,70,120,0.06);
-}
-.choice-btn:active{transform:translateY(2px)}
-.choice-btn:hover{transform:translateY(-6px); box-shadow:0 12px 34px rgba(50,70,120,0.09)}
-.choice-emoji{font-size:28px}
-#result{
-  margin-top:18px;
-  font-size:17px;
-  font-weight:600;
-  min-height:44px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
-.small-info{font-size:13px; color:#667; margin-top:8px}
-.result-win{color:#0a7b2d}
-.result-lose{color:#c62828}
-.result-draw{color:#5b6b86}
-.footer-row{display:flex; justify-content:space-between; align-items:center; gap:8px; margin-top:14px}
-.choice-display{font-size:13px}
-.play-again{background:none; border:none; color:#3750ff; cursor:pointer; font-weight:600}
-@media (max-width:420px){
-  .container{width:92%; padding:18px}
-  .choice-btn{height:82px}
+
+#result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
 }
