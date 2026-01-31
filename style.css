@@ -357,7 +357,16 @@ body {
     justify-content: center;
   }
   .top-games__card-1 {
+    height: 500px;
     max-width: 378px;
+    margin-bottom: 35px;
+  }
+  .top-games__card-1-min {
+    height: 500px;
+    margin-top: 0px;
+  }
+  .top-games__card-1-big {
+    max-height: 500px;
   }
   .mini-games__cards-main {
     gap: 20px;

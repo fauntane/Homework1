@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Генератор случайных цветов</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 100px;
+            transition: background-color 0.3s;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding-top: 100px;
+        transition: background-color 0.3s;
+    }
+
+    button {
+        padding: 15px 35px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #ffffff;
+        background-color: #333333;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+    }
+
+    button:hover {
+        background-color: #555555;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+    }
+
+    button:active {
+        transform: translateY(0);
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    }
+    </style>
+</head>
+
+<body>
+
+    <button id="changeColorButton">Сменить цвет фона</button>
+
+    <script>
+        const changeColorButton = document.getElementById("changeColorButton");
+
+        function getRandomColor() {
+            const red = Math.floor(Math.random() * 256);
+            const green = Math.floor(Math.random() * 256);
+            const blue = Math.floor(Math.random() * 256);
+
+            return `rgb(${red}, ${green}, ${blue})`;
+        }
+
+        changeColorButton.addEventListener("click", function () {
+            const randomColor = getRandomColor();
+            document.body.style.backgroundColor = randomColor;
+            alert("Новый цвет фона: " + randomColor);
+        });
+    </script>
+
+</body>
+
+</html>
