@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Угадай число</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #111;
+            /* тёмный фон */
+            font-family: Arial, sans-serif;
+        }
+
+        .game-card {
+            width: 350px;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            background: #fff;
+            animation: fadeIn 0.6s ease;
+        }
+
+        .game-header {
+            background: linear-gradient(135deg, #9c27b0, #673ab7);
+            color: white;
+            padding: 30px 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .game-body {
+            padding: 20px;
+        }
+
+        .game-body p {
+            color: #555;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        input {
+            padding: 10px;
+            width: 60%;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            background: #4caf50;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #388e3c;
+        }
+
+        #message {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+       .title {
+            color: white;
+        }
+
+        .text {
+            color: white;
+        }
+
+        #message {
+            color: white;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="game-container">
+        <h1 class="title">Игра: Угадай число</h1>
+        <p class="text">Я загадал число от 1 до 100. Попробуй его угадать!</p>
+
+        <input type="number" id="guess" placeholder="Введите число">
+        <button id="check">Проверить</button>
+
+        <p class="resultMessage" id="message"></p>
+    </section>
+
+    <script src="guessNum.js"></script>
+</body>
+
+</html>
